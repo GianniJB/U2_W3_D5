@@ -25,10 +25,14 @@
     </header>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-6 bg-light">
+        <div class="col-6 bg-secondary">
           <form>
             <!-- NOME PRODOTTO -->
-            <div class="input-group my-3">
+            <div class="form-floating mt-5">
+              <input type="text" class="form-control" id="pName" required">
+              <label for="pName">Nome Prodotto:</label>
+            </div>
+            <!--  <div class="input-group my-3">
               <span class="input-group-text" id="product-name"
                 >Nome Prodotto</span
               >
@@ -39,9 +43,13 @@
                 aria-describedby="product-name"
                 required
               />
-            </div>
+            </div> -->
             <!-- DESCRIZIONE -->
-            <div class="input-group mb-3">
+            <div class="form-floating mt-3">
+              <textarea class="form-control" id="pDesc" required></textarea>
+              <label for="pDesc">Descrizione:</label>
+            </div>
+            <!-- <div class="input-group mb-3">
               <span class="input-group-text">Descrizione</span>
               <textarea
                 id="pDesc"
@@ -49,9 +57,13 @@
                 aria-label="With textarea"
                 required
               ></textarea>
-            </div>
+            </div> -->
             <!-- BRAND -->
-            <div class="input-group my-3">
+            <div class="form-floating mt-3">
+              <input type="text" class="form-control" id="pBrand" required">
+              <label for="pName">Marca:</label>
+            </div>
+            <!-- <div class="input-group my-3">
               <span class="input-group-text" id="brand">Marca</span>
               <input
                 id="pBrand"
@@ -60,9 +72,13 @@
                 aria-describedby="brand"
                 required
               />
-            </div>
+            </div> -->
             <!-- IMG -->
-            <div class="input-group my-3">
+            <div class="form-floating mt-3">
+              <input type="text" class="form-control" id="pUrl" required">
+              <label for="pUrl">Url dell'Immagine:</label>
+            </div>
+            <!-- <div class="input-group my-3">
               <span class="input-group-text" id="image-url">Url Immagine</span>
               <input
                 id="pUrl"
@@ -71,14 +87,18 @@
                 aria-describedby="image-url"
                 required
               />
-            </div>
+            </div> -->
             <!-- PRICE -->
-            <div class="input-group mb-3">
+            <div class="form-floating mt-3">
+              <input type="text" class="form-control" id="pPrice" required">
+              <label for="pPrice">Prezzo in € :</label>
+            </div>
+            <!-- <div class="input-group mb-3">
               <span class="input-group-text">€</span>
               <input id="pPrice" type="number" class="form-control" required />
-            </div>
+            </div> -->
             <div class="d-grid gap-2 col-6 mx-auto my-3">
-              <button class="btn btn-success" type="submit">Submit</button>
+              <button class="btn btn-success" type="submit">Aggiungi</button>
             </div>
           </form>
         </div>
